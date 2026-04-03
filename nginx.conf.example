@@ -1,0 +1,50 @@
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    sendfile        on;
+    keepalive_timeout  65;
+
+    # Сервер для статики (index.html и проч.)
+    server {
+        listen       80;
+        server_name  localhost;
+
+        # Каталог со статическими файлами
+        # Укажите здесь путь к папке static из проекта.
+        # Например на Windows:
+        #   root   C:/Users/Nikita/Downloads/goapp/static;
+        #
+        # Или на Linux:
+        #   root   /var/www/goapp/static;
+        root   C:/Users/Nikita/Downloads/goapp/static;
+
+        index  index.html;
+
+        location / {
+            try_files $uri $uri/ /index.html;
+        }
+    }
+
+    # Пример reverse-proxy к Go-серверу (опционально)
+    #
+    # server {
+    #     listen 8081;
+    #     server_name localhost;
+    #
+    #     location / {
+    #         proxy_pass         http://127.0.0.1:8080;
+    #         proxy_set_header   Host $host;
+    #         proxy_set_header   X-Real-IP $remote_addr;
+    #         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+    #         proxy_set_header   X-Forwarded-Proto $scheme;
+    #     }
+    # }
+}
+

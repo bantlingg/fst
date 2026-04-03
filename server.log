@@ -1,0 +1,25 @@
+2026/04/03 11:51:49.222551 starting Go message server...
+2026/04/03 11:51:49.231477 server listening on :8080
+2026/04/03 11:52:01.730295 http request: method=GET path=/message ip=::1
+2026/04/03 11:52:01.730295 request: method=GET path=/message ip=::1
+2026/04/03 11:52:01.730828 http response: method=GET path=/message ip=::1 duration=532.7µs
+2026/04/03 11:52:05.289946 http request: method=GET path=/message ip=::1
+2026/04/03 11:52:05.289946 request: method=GET path=/message ip=::1
+2026/04/03 11:52:05.290453 http response: method=GET path=/message ip=::1 duration=506.8µs
+2026/04/03 11:52:08.803356 http request: method=GET path=/ ip=::1
+2026/04/03 11:52:08.855827 http response: method=GET path=/ ip=::1 duration=52.4715ms
+2026/04/03 11:52:08.867166 http request: method=GET path=/message ip=::1
+2026/04/03 11:52:08.867166 request: method=GET path=/message ip=::1
+2026/04/03 11:52:08.867675 http response: method=GET path=/message ip=::1 duration=509µs
+2026/04/03 11:52:18.194009 http request: method=POST path=/message ip=::1
+2026/04/03 11:52:18.194009 request: method=POST path=/message ip=::1
+2026/04/03 11:52:18.195108 http response: method=POST path=/message ip=::1 duration=1.0991ms
+2026/04/03 11:52:18.210341 http request: method=GET path=/message ip=::1
+2026/04/03 11:52:18.210341 request: method=GET path=/message ip=::1
+2026/04/03 11:52:18.210341 http response: method=GET path=/message ip=::1 duration=0s
+2026/04/03 11:52:36.015302 http request: method=POST path=/message ip=::1
+2026/04/03 11:52:36.017783 request: method=POST path=/message ip=::1
+2026/04/03 11:52:36.019371 http response: method=POST path=/message ip=::1 duration=4.0696ms
+2026/04/03 11:52:36.036719 http request: method=GET path=/message ip=::1
+2026/04/03 11:52:36.036719 request: method=GET path=/message ip=::1
+2026/04/03 11:52:36.037491 http response: method=GET path=/message ip=::1 duration=772.4µs
